@@ -1,0 +1,22 @@
+[
+    {
+        "_id": "pears",
+        "value": 25
+    },
+    {
+        "_id": "carrots",
+        "value": 15
+    },
+    {
+        "_id": "apples",
+        "value": 87.5
+    },
+    {
+        "_id": "chocolates",
+        "value": 150
+    },
+    {
+        "_id": "oranges",
+        "value": 157.5
+    }
+]
