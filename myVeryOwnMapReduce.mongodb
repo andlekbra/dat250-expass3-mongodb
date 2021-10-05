@@ -1,0 +1,21 @@
+//My self-developed map reduce coming next!
+//I want to find the total income different products
+
+var mapFunction2 = function()
+{
+   this.items.forEach((element) => {
+      emit(element.sku,(element.qty*element.price));
+   });
+};
+
+var reduceFunction2 = function(keyProduct, valueTotal) {
+   return Array.sum(valueTotal);
+};
+
+db.orders.mapReduce(
+   mapFunction2,
+   reduceFunction2,
+   { out: "map_reduce_example_products" }
+)
+
+db.map_reduce_example_products.find();
